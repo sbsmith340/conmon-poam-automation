@@ -1,0 +1,9 @@
+asset,ip,type,platform,owner_role,boundary
+fip-lb-01,10.20.1.10,network-appliance,Northwind LB 9.2 (vendor appliance),Network Engineer,inside
+fip-web-01,10.20.2.11,virtual-machine,Ubuntu 22.04,System Administrator,inside
+fip-web-02,10.20.2.12,virtual-machine,Ubuntu 22.04,System Administrator,inside
+fip-api-01,10.20.2.21,virtual-machine,Ubuntu 22.04,System Administrator,inside
+fip-sql-01,10.20.3.31,virtual-machine,Windows Server 2022 / SQL Server 2022,Database Administrator,inside
+fip-jump-01,10.20.0.5,virtual-machine,Ubuntu 22.04 (bastion),System Administrator,inside
+fip-ci-runner-01,10.20.5.41,virtual-machine,Ubuntu 22.04 (build runner),DevSecOps Engineer,inside
+fip-portal:2.4,n/a,container-image,"fip-portal image, Debian 12 base",DevSecOps Engineer,inside
