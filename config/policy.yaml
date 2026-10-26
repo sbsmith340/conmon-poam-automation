@@ -1,0 +1,32 @@
+# Remediation policy. Defaults follow FedRAMP's Rev 5 continuous monitoring POA&M guidance:
+# Critical and High within 30 days of discovery, Moderate within 90, Low within 180.
+# Change these numbers to match an agency's own policy; nothing else in the code is hard-coded.
+system:
+  id: FIP
+  name: Field Inspection Portal
+  impact_level: Moderate
+  owner_role: Information System Security Officer
+
+remediation_days:
+  Critical: 30
+  High: 30
+  Moderate: 90
+  Low: 180
+
+# High-risk vendor dependencies must be mitigated to Moderate with compensating
+# controls within this many days, and the vendor must be checked with at least this often.
+vendor_dependency:
+  high_mitigation_days: 30
+  checkin_max_days: 30
+
+# NIST SP 800-53 Rev 5 controls each finding category is tracked against.
+category_controls:
+  patch: [RA-5, SI-2]
+  crypto: [CM-6, SC-13]
+  tls: [CM-6, SC-8]
+  smb: [CM-6, SC-8]
+  coverage: [RA-5, CA-7]
+  inventory: [CM-8]
+
+# Scanner severities that never become POA&M items.
+ignore_severities: [Info]
