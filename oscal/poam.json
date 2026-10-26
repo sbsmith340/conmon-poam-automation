@@ -1,0 +1,816 @@
+{
+  "plan-of-action-and-milestones": {
+    "uuid": "b191c68d-8a87-57ce-b34d-b24a38f63f96",
+    "metadata": {
+      "title": "Field Inspection Portal Continuous Monitoring POA&M",
+      "last-modified": "2026-09-07T00:00:00Z",
+      "version": "2026-09-07",
+      "oscal-version": "1.1.2",
+      "remarks": "Generated from synthetic monthly scan data for a portfolio demonstration."
+    },
+    "import-ssp": {
+      "href": "https://raw.githubusercontent.com/sbsmith340/oscal-ato-package/main/oscal/ssp.json"
+    },
+    "system-id": {
+      "identifier-type": "https://ietf.org/rfc/rfc4122",
+      "id": "b70f730f-4231-51ea-b461-3a487f1a9263"
+    },
+    "observations": [
+      {
+        "uuid": "a446d15f-39e3-50f6-8722-cd235e3651e2",
+        "title": "OpenSSH signal handler race condition (regreSSHion) remote code execution",
+        "description": "Detected by monthly vulnerability scan on: fip-jump-01, fip-test-03.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2024-6387."
+      },
+      {
+        "uuid": "b6e296fb-dea2-5113-aee3-4a760ebc4eda",
+        "title": "xz-utils / liblzma embedded backdoor",
+        "description": "Detected by monthly vulnerability scan on: fip-api-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2024-3094."
+      },
+      {
+        "uuid": "c6e2ad77-de47-5f2a-8b5e-8367da2108bf",
+        "title": "curl SOCKS5 proxy handshake heap buffer overflow",
+        "description": "Detected by monthly vulnerability scan on: fip-ci-runner-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2023-38545."
+      },
+      {
+        "uuid": "0521cd0a-ccdb-5a63-8ed7-b794fa732c51",
+        "title": "libwebp heap buffer overflow in container image",
+        "description": "Detected by monthly vulnerability scan on: fip-portal:2.4.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2023-4863."
+      },
+      {
+        "uuid": "77e9f6df-c211-5519-b84e-3eb9fcdb5efd",
+        "title": "OpenSSL BN_mod_sqrt() infinite loop denial of service",
+        "description": "Detected by monthly vulnerability scan on: fip-sql-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2022-0778."
+      },
+      {
+        "uuid": "6a45ad23-3f15-5375-be34-f7be6266b25a",
+        "title": "SSH prefix truncation attack (Terrapin)",
+        "description": "Detected by monthly vulnerability scan on: fip-jump-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2023-48795."
+      },
+      {
+        "uuid": "ec7fb087-1485-58df-957c-456fbd45d72a",
+        "title": "TLS 1.0 and TLS 1.1 enabled on partner integration listener",
+        "description": "Detected by monthly vulnerability scan on: fip-lb-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: FIP-2001."
+      },
+      {
+        "uuid": "3f2fe638-775a-58d4-8ea1-c87291d5511c",
+        "title": "SMB signing not required",
+        "description": "Detected by monthly vulnerability scan on: fip-sql-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: FIP-2002."
+      },
+      {
+        "uuid": "a7711f44-f400-5441-b3ac-922811931e8e",
+        "title": "SSH server allows CBC mode ciphers",
+        "description": "Detected by monthly vulnerability scan on: fip-web-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-07-06T00:00:00Z",
+        "remarks": "Scanner identifier: FIP-2003."
+      },
+      {
+        "uuid": "471bc279-f027-5519-aaac-e3cae3cef33d",
+        "title": "HTTP/2 Rapid Reset denial of service",
+        "description": "Detected by monthly vulnerability scan on: fip-lb-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-08-03T00:00:00Z",
+        "remarks": "Scanner identifier: CVE-2023-44487."
+      },
+      {
+        "uuid": "ef53dc55-89a1-587f-a17e-6177bdbc2d75",
+        "title": "Inventoried asset not reached by the monthly scan",
+        "description": "Detected by monthly vulnerability scan on: fip-ci-runner-01.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-09-07T00:00:00Z",
+        "remarks": "Scanner identifier: COV-fip-ci-runner-01."
+      },
+      {
+        "uuid": "88caa771-17a9-5d99-b930-510f5bfaaf6f",
+        "title": "Scanned asset missing from the system inventory",
+        "description": "Detected by monthly vulnerability scan on: fip-test-03.",
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "collected": "2026-09-07T00:00:00Z",
+        "remarks": "Scanner identifier: INV-fip-test-03."
+      }
+    ],
+    "risks": [
+      {
+        "uuid": "201461b7-c8cf-5c29-b477-d9f8d2e40e30",
+        "title": "OpenSSH signal handler race condition (regreSSHion) remote code execution",
+        "description": "OpenSSH signal handler race condition (regreSSHion) remote code execution (CVE-2024-6387).",
+        "statement": "Affects controls RA-5, SI-2. Original risk High; current risk High.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "high"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "high"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "a446d15f-39e3-50f6-8722-cd235e3651e2"
+          }
+        ],
+        "deadline": "2026-08-05T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "52a65598-a3b8-5e03-b937-8021027e5e0d",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Upgrade OpenSSH to the vendor-patched package."
+          }
+        ]
+      },
+      {
+        "uuid": "15cf3749-cd97-56fe-a0c4-e65f22a1cb02",
+        "title": "xz-utils / liblzma embedded backdoor",
+        "description": "xz-utils / liblzma embedded backdoor (CVE-2024-3094).",
+        "statement": "Affects controls RA-5, SI-2. Original risk Critical; current risk Critical.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "critical"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "critical"
+          }
+        ],
+        "status": "closed",
+        "related-observations": [
+          {
+            "observation-uuid": "b6e296fb-dea2-5113-aee3-4a760ebc4eda"
+          }
+        ]
+      },
+      {
+        "uuid": "9d651f31-61c3-5126-aa19-c0238ad72b0b",
+        "title": "curl SOCKS5 proxy handshake heap buffer overflow",
+        "description": "curl SOCKS5 proxy handshake heap buffer overflow (CVE-2023-38545).",
+        "statement": "Affects controls RA-5, SI-2. Original risk Critical; current risk Critical.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "critical"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "critical"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "c6e2ad77-de47-5f2a-8b5e-8367da2108bf"
+          }
+        ],
+        "deadline": "2026-08-05T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "c4fc8c73-a547-5123-a607-d4e0ba298395",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Upgrade curl and libcurl to the vendor-patched package."
+          }
+        ]
+      },
+      {
+        "uuid": "dbe93f7b-801d-5cbe-b038-9b8e8d13ac20",
+        "title": "libwebp heap buffer overflow in container image",
+        "description": "libwebp heap buffer overflow in container image (CVE-2023-4863).",
+        "statement": "Affects controls RA-5, SI-2. Original risk High; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "high"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "0521cd0a-ccdb-5a63-8ed7-b794fa732c51"
+          }
+        ],
+        "deadline": "2026-10-04T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "e4150f65-c969-5845-b5d7-ece492f0bc2f",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Rebuild the image on a base with the patched libwebp package."
+          }
+        ]
+      },
+      {
+        "uuid": "69748cd5-7ac8-5b09-8987-4a5c4ae65b9c",
+        "title": "OpenSSL BN_mod_sqrt() infinite loop denial of service",
+        "description": "OpenSSL BN_mod_sqrt() infinite loop denial of service (CVE-2022-0778).",
+        "statement": "Affects controls RA-5, SI-2. Original risk High; current risk High.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "high"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "high"
+          }
+        ],
+        "status": "closed",
+        "related-observations": [
+          {
+            "observation-uuid": "77e9f6df-c211-5519-b84e-3eb9fcdb5efd"
+          }
+        ]
+      },
+      {
+        "uuid": "dc14a20f-c877-55c1-89f5-f9f5168de74d",
+        "title": "SSH prefix truncation attack (Terrapin)",
+        "description": "SSH prefix truncation attack (Terrapin) (CVE-2023-48795).",
+        "statement": "Affects controls CM-6, SC-13. Original risk Moderate; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "moderate"
+          }
+        ],
+        "status": "deviation-requested",
+        "related-observations": [
+          {
+            "observation-uuid": "6a45ad23-3f15-5375-be34-f7be6266b25a"
+          }
+        ],
+        "deadline": "2026-10-04T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "81cb9fa7-a953-50e7-ad57-de414a11b0ae",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Enable strict key exchange or disable ChaCha20-Poly1305 and Encrypt-then-MAC modes."
+          }
+        ]
+      },
+      {
+        "uuid": "c3b034f4-cdeb-5b0e-9a35-4fd03c9471d8",
+        "title": "TLS 1.0 and TLS 1.1 enabled on partner integration listener",
+        "description": "TLS 1.0 and TLS 1.1 enabled on partner integration listener (FIP-2001).",
+        "statement": "Affects controls CM-6, SC-8. Original risk Moderate; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "moderate"
+          }
+        ],
+        "status": "deviation-approved",
+        "related-observations": [
+          {
+            "observation-uuid": "ec7fb087-1485-58df-957c-456fbd45d72a"
+          }
+        ],
+        "deadline": "2026-10-04T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "13bfd1db-8d11-519e-90d3-8ac772951536",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Disable TLS 1.0 and 1.1; require TLS 1.2 or higher."
+          }
+        ]
+      },
+      {
+        "uuid": "4044bab1-b86c-506c-8601-99a00307519c",
+        "title": "SMB signing not required",
+        "description": "SMB signing not required (FIP-2002).",
+        "statement": "Affects controls CM-6, SC-8. Original risk Moderate; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "moderate"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "3f2fe638-775a-58d4-8ea1-c87291d5511c"
+          }
+        ],
+        "deadline": "2026-12-06T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "889c5eac-9fdc-584e-bb0d-f66040d4175d",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Require SMB signing through Group Policy."
+          }
+        ]
+      },
+      {
+        "uuid": "598224b0-8df5-5ea2-980a-7ba9a47728ad",
+        "title": "SSH server allows CBC mode ciphers",
+        "description": "SSH server allows CBC mode ciphers (FIP-2003).",
+        "statement": "Affects controls CM-6, SC-13. Original risk Low; current risk Low.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "low"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "low"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "a7711f44-f400-5441-b3ac-922811931e8e"
+          }
+        ],
+        "deadline": "2027-01-02T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "d7054501-22a1-5ec1-a672-bdeb7ff3214f",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Remove CBC ciphers from the sshd Ciphers list."
+          }
+        ]
+      },
+      {
+        "uuid": "46269758-5a4f-5be0-aba6-72e731ec7f63",
+        "title": "HTTP/2 Rapid Reset denial of service",
+        "description": "HTTP/2 Rapid Reset denial of service (CVE-2023-44487).",
+        "statement": "Affects controls RA-5, SI-2. Original risk High; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "high"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "471bc279-f027-5519-aaac-e3cae3cef33d"
+          }
+        ],
+        "deadline": "2026-11-01T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "e8caf004-b05d-5141-830e-6aaa31906f08",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Apply the appliance vendor's firmware fix when released."
+          }
+        ]
+      },
+      {
+        "uuid": "fa40deac-073f-5915-9aeb-6c3c5c78b26c",
+        "title": "Inventoried asset not reached by the monthly scan",
+        "description": "Inventoried asset not reached by the monthly scan (COV-fip-ci-runner-01).",
+        "statement": "Affects controls RA-5, CA-7. Original risk Moderate; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "moderate"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "ef53dc55-89a1-587f-a17e-6177bdbc2d75"
+          }
+        ],
+        "deadline": "2026-12-06T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "14f069a0-f522-5d6f-ac36-fe040f93ba0f",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Confirm the asset is powered on and reachable with credentials, then rescan."
+          }
+        ]
+      },
+      {
+        "uuid": "e0f2e1bd-5f70-5627-a112-59b73607afef",
+        "title": "Scanned asset missing from the system inventory",
+        "description": "Scanned asset missing from the system inventory (INV-fip-test-03).",
+        "statement": "Affects controls CM-8. Original risk Moderate; current risk Moderate.",
+        "props": [
+          {
+            "name": "risk-level",
+            "value": "moderate"
+          },
+          {
+            "name": "original-risk-level",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "moderate"
+          }
+        ],
+        "status": "open",
+        "related-observations": [
+          {
+            "observation-uuid": "88caa771-17a9-5d99-b930-510f5bfaaf6f"
+          }
+        ],
+        "deadline": "2026-12-06T00:00:00Z",
+        "remediations": [
+          {
+            "uuid": "e5110a88-44a7-5840-b340-bdfa293f82f5",
+            "lifecycle": "planned",
+            "title": "Remediation",
+            "description": "Add the asset to the inventory with an owner, or decommission it."
+          }
+        ]
+      }
+    ],
+    "poam-items": [
+      {
+        "uuid": "45ea8dc2-1e17-5977-a9dd-db57b087f0ff",
+        "title": "OpenSSH signal handler race condition (regreSSHion) remote code execution",
+        "description": "OpenSSH signal handler race condition (regreSSHion) remote code execution. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0001"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "a446d15f-39e3-50f6-8722-cd235e3651e2"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "201461b7-c8cf-5c29-b477-d9f8d2e40e30"
+          }
+        ]
+      },
+      {
+        "uuid": "a1c5a8d2-72bd-5166-8969-e0607812e47d",
+        "title": "xz-utils / liblzma embedded backdoor",
+        "description": "xz-utils / liblzma embedded backdoor. Status: Closed (remediated).",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0002"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "b6e296fb-dea2-5113-aee3-4a760ebc4eda"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "15cf3749-cd97-56fe-a0c4-e65f22a1cb02"
+          }
+        ]
+      },
+      {
+        "uuid": "48a21b79-1c7b-526b-a54d-9b15e80f6bf5",
+        "title": "curl SOCKS5 proxy handshake heap buffer overflow",
+        "description": "curl SOCKS5 proxy handshake heap buffer overflow. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0003"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "c6e2ad77-de47-5f2a-8b5e-8367da2108bf"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "9d651f31-61c3-5126-aa19-c0238ad72b0b"
+          }
+        ]
+      },
+      {
+        "uuid": "5646907a-948d-5288-b523-0e8cd6c398df",
+        "title": "libwebp heap buffer overflow in container image",
+        "description": "libwebp heap buffer overflow in container image. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0004"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "0521cd0a-ccdb-5a63-8ed7-b794fa732c51"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "dbe93f7b-801d-5cbe-b038-9b8e8d13ac20"
+          }
+        ],
+        "remarks": "DR-001 risk adjusted High to Moderate, approved 2026-07-21"
+      },
+      {
+        "uuid": "cffab898-8dd1-5af5-8ffc-2adcd0cdd399",
+        "title": "OpenSSL BN_mod_sqrt() infinite loop denial of service",
+        "description": "OpenSSL BN_mod_sqrt() infinite loop denial of service. Status: Closed (false positive).",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0005"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "77e9f6df-c211-5519-b84e-3eb9fcdb5efd"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "69748cd5-7ac8-5b09-8987-4a5c4ae65b9c"
+          }
+        ],
+        "remarks": "DR-002 false positive approved 2026-07-17"
+      },
+      {
+        "uuid": "6c8653a6-01d2-57ce-a2e7-09bc9fe6196e",
+        "title": "SSH prefix truncation attack (Terrapin)",
+        "description": "SSH prefix truncation attack (Terrapin). Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0006"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "6a45ad23-3f15-5375-be34-f7be6266b25a"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "dc14a20f-c877-55c1-89f5-f9f5168de74d"
+          }
+        ],
+        "remarks": "DR-004 FP pending approval (requested 2026-08-25)"
+      },
+      {
+        "uuid": "33329b04-63c2-5ad2-a489-888840be2980",
+        "title": "TLS 1.0 and TLS 1.1 enabled on partner integration listener",
+        "description": "TLS 1.0 and TLS 1.1 enabled on partner integration listener. Status: Risk accepted (OR).",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0007"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "ec7fb087-1485-58df-957c-456fbd45d72a"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "c3b034f4-cdeb-5b0e-9a35-4fd03c9471d8"
+          }
+        ],
+        "remarks": "DR-003 operational requirement approved 2026-07-28; reassess by 2027-01-28"
+      },
+      {
+        "uuid": "ae3d4bdf-b9ef-5019-90f2-352599517198",
+        "title": "SMB signing not required",
+        "description": "SMB signing not required. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0008"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "3f2fe638-775a-58d4-8ea1-c87291d5511c"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "4044bab1-b86c-506c-8601-99a00307519c"
+          }
+        ]
+      },
+      {
+        "uuid": "d75abe6a-010d-5faa-a50d-a5d5deb6714c",
+        "title": "SSH server allows CBC mode ciphers",
+        "description": "SSH server allows CBC mode ciphers. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0009"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "a7711f44-f400-5441-b3ac-922811931e8e"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "598224b0-8df5-5ea2-980a-7ba9a47728ad"
+          }
+        ]
+      },
+      {
+        "uuid": "17b9ec41-0b5d-5671-8245-0abf7eb25db9",
+        "title": "HTTP/2 Rapid Reset denial of service",
+        "description": "HTTP/2 Rapid Reset denial of service. Status: Open (vendor dependency).",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0010"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "471bc279-f027-5519-aaac-e3cae3cef33d"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "46269758-5a4f-5be0-aba6-72e731ec7f63"
+          }
+        ],
+        "remarks": "vendor Northwind Networks (load balancer appliance) ticket NWN-58123; last check-in 2026-08-28; mitigated to Moderate on 2026-08-19"
+      },
+      {
+        "uuid": "1a933b21-d0f6-5706-ac96-269918d48d6a",
+        "title": "Inventoried asset not reached by the monthly scan",
+        "description": "Inventoried asset not reached by the monthly scan. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0011"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "ef53dc55-89a1-587f-a17e-6177bdbc2d75"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "fa40deac-073f-5915-9aeb-6c3c5c78b26c"
+          }
+        ]
+      },
+      {
+        "uuid": "5563a86e-4bc1-5dfe-938c-7ea8f846fa1e",
+        "title": "Scanned asset missing from the system inventory",
+        "description": "Scanned asset missing from the system inventory. Status: Open.",
+        "props": [
+          {
+            "name": "POAM-ID",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "V-0012"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "88caa771-17a9-5d99-b930-510f5bfaaf6f"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "e0f2e1bd-5f70-5627-a112-59b73607afef"
+          }
+        ]
+      }
+    ]
+  }
+}
