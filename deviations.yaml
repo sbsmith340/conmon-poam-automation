@@ -1,0 +1,66 @@
+# Deviation requests and vendor dependencies, keyed by the scanner plugin ID.
+# This is the only file a person edits each month besides the scan exports.
+#
+# type: FP  false positive         -> closes the item once approved
+#       RA  risk adjustment        -> lowers the risk rating once approved (and the due date with it)
+#       OR  operational requirement -> stays open as an accepted risk; never allowed for High
+#       VD  vendor dependency      -> not a deviation; needs monthly vendor check-ins, and a High VD
+#                                     must be mitigated to Moderate with compensating controls
+deviations:
+  - id: DR-001
+    plugin_id: FIP-1004
+    type: RA
+    status: approved
+    requested_on: 2026-07-14
+    approved_on: 2026-07-21
+    adjusted_risk: Moderate
+    rationale: >-
+      The portal never decodes WebP images: uploads are restricted to PDF and JPEG at the API
+      layer and the vulnerable library is only a transitive dependency of the base image.
+      Exploitation requires attacker-supplied WebP input, which cannot reach the library.
+    evidence: API upload allow-list configuration; dependency tree showing no direct use of libwebp.
+
+  - id: DR-002
+    plugin_id: FIP-1005
+    type: FP
+    status: approved
+    requested_on: 2026-07-10
+    approved_on: 2026-07-17
+    rationale: >-
+      The scanner matched on the OpenSSL version string. The vendor build on this host includes
+      the back-ported fix, confirmed by the vendor advisory and the package changelog.
+    evidence: Package changelog entry and vendor advisory reference.
+
+  - id: DR-003
+    plugin_id: FIP-2001
+    type: OR
+    status: approved
+    requested_on: 2026-07-18
+    approved_on: 2026-07-28
+    reassess_by: 2027-01-28
+    rationale: >-
+      One state partner's case-management system can only negotiate TLS 1.1. The listener is
+      limited to that partner's two source IPs by WAF rule, and the partner has committed to
+      an upgrade in Q1 2027.
+    evidence: WAF allow-list rule; partner upgrade letter.
+
+  - id: DR-004
+    plugin_id: FIP-1006
+    type: FP
+    status: pending
+    requested_on: 2026-08-25
+    rationale: >-
+      Strict key exchange is enabled on the bastion; the scanner flags any host that offers
+      ChaCha20-Poly1305 without checking for the strict-kex extension.
+    evidence: sshd -T output showing kex-strict; awaiting assessor validation.
+
+vendor_dependencies:
+  - plugin_id: FIP-1007
+    vendor: Northwind Networks (load balancer appliance)
+    vendor_ticket: NWN-58123
+    opened_on: 2026-08-04
+    checkins: [2026-08-04, 2026-08-28]
+    compensating_control: >-
+      HTTP/2 disabled on the public listener; the WAF rate-limits stream resets per client.
+    mitigated_to: Moderate
+    mitigated_on: 2026-08-19
