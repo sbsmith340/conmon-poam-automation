@@ -1,0 +1,21 @@
+scan_date,asset,ip,plugin_id,cve,title,severity,cvss,category,port,solution
+2026-08-03,fip-api-01,10.20.2.21,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-api-01,10.20.2.21,FIP-0001,,OS identification,Info,,info,,
+2026-08-03,fip-ci-runner-01,10.20.5.41,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-ci-runner-01,10.20.5.41,FIP-1003,CVE-2023-38545,curl SOCKS5 proxy handshake heap buffer overflow,Critical,9.8,patch,,Upgrade curl and libcurl to the vendor-patched package.
+2026-08-03,fip-jump-01,10.20.0.5,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-jump-01,10.20.0.5,FIP-1001,CVE-2024-6387,OpenSSH signal handler race condition (regreSSHion) remote code execution,High,8.1,patch,22,Upgrade OpenSSH to the vendor-patched package.
+2026-08-03,fip-jump-01,10.20.0.5,FIP-1006,CVE-2023-48795,SSH prefix truncation attack (Terrapin),Moderate,5.9,crypto,22,Enable strict key exchange or disable ChaCha20-Poly1305 and Encrypt-then-MAC modes.
+2026-08-03,fip-lb-01,10.20.1.10,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-lb-01,10.20.1.10,FIP-1007,CVE-2023-44487,HTTP/2 Rapid Reset denial of service,High,7.5,patch,443,Apply the appliance vendor's firmware fix when released.
+2026-08-03,fip-lb-01,10.20.1.10,FIP-2001,,TLS 1.0 and TLS 1.1 enabled on partner integration listener,Moderate,6.5,tls,443,Disable TLS 1.0 and 1.1; require TLS 1.2 or higher.
+2026-08-03,fip-portal:2.4,n/a,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-portal:2.4,n/a,FIP-1004,CVE-2023-4863,libwebp heap buffer overflow in container image,High,8.8,patch,,Rebuild the image on a base with the patched libwebp package.
+2026-08-03,fip-sql-01,10.20.3.31,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-sql-01,10.20.3.31,FIP-0001,,OS identification,Info,,info,,
+2026-08-03,fip-sql-01,10.20.3.31,FIP-1005,CVE-2022-0778,OpenSSL BN_mod_sqrt() infinite loop denial of service,High,7.5,patch,1433,Apply the vendor OpenSSL update.
+2026-08-03,fip-web-01,10.20.2.11,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-web-01,10.20.2.11,FIP-0001,,OS identification,Info,,info,,
+2026-08-03,fip-web-01,10.20.2.11,FIP-2003,,SSH server allows CBC mode ciphers,Low,2.6,crypto,22,Remove CBC ciphers from the sshd Ciphers list.
+2026-08-03,fip-web-02,10.20.2.12,FIP-0000,,Scan completed with credentials,Info,,info,,
+2026-08-03,fip-web-02,10.20.2.12,FIP-0001,,OS identification,Info,,info,,
